@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Roboto:wght@500&display=swap');
+
+.container a {
+    scroll-behavior: smooth;
+    text-decoration: none; /* Agrega esta línea para quitar el subrayado */
+    color: #2A476E;/* Esto asegura que los enlaces mantengan el color de texto predeterminado */
+}
+
+
+.container{
+  
+    width: 100%;
+    display: flex;
+ 
+    justify-content: space-around;
+    height: 8vh;
+    background-color:#c4c4c4;
+    position: fixed !important;
+    top:0;
+    z-index: 9999;
+    box-shadow: #c4c4c4;
+    
+}
+.home{
+align-items: center;
+display: flex;
+width: 50%;
+background-color: #c4c4c4;
+
+
+}
+.subhome{
+    color:#c4c4c4 ;
+    font-family: 'Lato', sans-serif;
+font-size: 2rem;
+transition: 0.3s ease-in-out;
+
+
+
+}
+.subhome:hover {
+    text-shadow: .11rem .1rem .2rem #000000;
+    transform: scale(1.2);
+ 
+}
+
+
+.others{
+    
+    width: 30%;
+    background-color: #c4c4c4;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 1rem;
+    color:#c4c4c4;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+.projects{ transition: 0.3s ease-in-out;}
+.projects:hover {
+    text-shadow: .11rem .1rem .2rem #000000;
+    transform: scale(1.2);
+  
+}
+.technologies{ transition: 0.3s ease-in-out;}
+.technologies:hover {
+    text-shadow: .11rem .1rem .2rem #000000;
+    transform: scale(1.2);
+    
+}
+.contact{ transition: 0.3s ease-in-out;}
+.contact:hover {
+    text-shadow: .11rem .1rem .2rem #000000;
+    transform: scale(1.2);
+   
+}
+
+.container a {
+    scroll-behavior: smooth;
+  }

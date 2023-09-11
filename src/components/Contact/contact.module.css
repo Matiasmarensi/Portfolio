@@ -1,0 +1,138 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Roboto:wght@500&display=swap'); */
+.container{
+ 
+  font-family: 'Lato', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width:80vw;
+
+  color:#c4c4c4;
+  filter: drop-shadow(.32rem .1rem .2rem #000000);
+ 
+}
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c4c4c4;
+  text-align: center;
+}
+.subcontainer{
+  display: flex;
+  width: 70%;
+
+}
+.form {
+    padding: .6rem;
+    border-radius: .1rem;
+    width: 100%;
+    /* background-color: #961010; */
+    border: solid 0.02rem #000000;
+    box-shadow: 0.1rem 0.1rem 0rem #000000;
+   
+    background-color: #c4c4c4;
+    margin-bottom: 12rem !important;
+    
+  }
+  
+  .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2A476E;
+    text-align: center;
+    
+  }
+  
+  .label {
+    font-family: 'Lato', sans-serif;
+    display: block;
+   
+    ;
+    font-size: 1.3rem;
+    color: #2A476E;
+  }
+  
+  .input {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding: .2rem;
+    margin-bottom: 1rem;
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde completo */
+    border-bottom: .1rem solid #000000; /* Añade solo la línea inferior */
+    border-radius: 0; /* Elimina cualquier borde redondeado */
+    color:2A476E;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+  }
+  .input:focus {
+    outline: none; /* Elimina el borde de enfoque */
+    /* ... tus otros estilos ... */
+  }
+  .inputname:focus {
+    outline: none; /* Elimina el borde de enfoque */
+    /* ... tus otros estilos ... */
+  }
+  .inputmail:focus {
+    outline: none; /* Elimina el borde de enfoque */
+    /* ... tus otros estilos ... */
+  }
+  .inputname{
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    background-color: #f4f7f3;
+    border: .1rem solid #000000;
+    border-radius: 0.3rem;
+    color:white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde completo */
+    border-bottom: .1rem solid #000000; /* Añade solo la línea inferior */
+    border-radius: 0; /* Elimina cualquier borde redondeado */
+  }
+  .inputmail{
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    background-color: #f4f7f3;
+    border: .1rem solid #000000;
+    border-radius: 0.3rem;
+    color:white;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde completo */
+    border-bottom: .1rem solid #000000; /* Añade solo la línea inferior */
+    border-radius: 0; /* Elimina cualquier borde redondeado */
+  }
+  
+  
+  .button {
+    background-color: #961010;
+    color: #fbfbfb;
+    width: auto; /* El ancho se ajustará al contenido */
+    max-width: 100%; /* Ancho máximo igual al contenedor */
+    padding: 0.5rem 1rem; /* Padding ajustado para pantallas pequeñas */
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem; /* Tamaño del texto ajustado */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+  .button:hover {
+    background-color: #c4c4c4;
+    transform: scale(1.1);
+  }
+  

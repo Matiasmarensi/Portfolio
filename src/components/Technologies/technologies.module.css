@@ -1,0 +1,123 @@
+/* technologies.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+.container {
+  margin-top: 0.1rem;
+  font-family: 'Lato', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width:80vw;
+ 
+  color:#c4c4c4;
+  filter: drop-shadow(.32rem .1rem .2rem #000000);
+ 
+}
+
+.box {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 1rem; 
+  gap:1rem;
+  
+  
+}
+
+.column {
+ 
+  
+  display: flex;
+  flex-direction: column; 
+ 
+  
+  
+  border-radius:2rem;
+  width: 60%; 
+  margin: 0.1rem; 
+  background-color:  #c4c4c4;
+  
+}
+@keyframes shine {
+  0% {
+    left: -100%; /* Empieza fuera de la vista */
+  }
+  50% {
+    left: 100%; /* Alcanza el máximo de brillo */
+  }
+  100% {
+    left: -100%; /* Vuelve a estar fuera de la vista */
+  }
+}
+.row {
+ 
+  box-shadow: inset black 11px;
+  opacity: 1;
+  padding: .1rem;
+  justify-content: space-between;
+  padding-left: 1rem;
+  animation-name: example;
+  animation-duration: 4s;
+  display: flex;
+  align-items: center;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: 2s ease-in-out
+ 
+  
+}
+.row:hover{
+  
+  transform: scale(1.05);
+}
+
+.rowContainer{
+
+  filter: drop-shadow(.0rem .010rem .0rem  #000000);
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  flex-direction: column;
+  
+  gap: .5rem;
+
+  
+ 
+}
+
+
+
+
+.pText {
+ 
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border-radius: 0.1rem;
+  filter: drop-shadow(.32rem .1rem .2rem #c4c4c4);
+}
+
+.img {
+  width: 4vw;
+  height: 4vw;
+ justify-items: center;
+  filter: drop-shadow(.32rem .1rem .2rem #c4c4c4);
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+  }
+  .container{margin: 2rem;}
+  .column {
+    width: 100%;
+  }
+}

@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import styles from "./page.module.css";
+import NavBar from "./components/NavBar/NavBar"; //
+import Divider from "./components/divider";
+import Contact from "./components/Contact/Contact";
+import Technologies from "./components/Technologies/Technologies";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <main className={styles.main}>
+      <NavBar />
+      <div className={styles.container}>
+        <div className={styles.subcontainer}>
+          <div className={styles.perfil}>
+            <h1 className={styles.title}>MI NOMBRE</h1>
+            <h3 className={styles.stack}>Full Stack Developer</h3>
+          </div>
+          <img className={styles.image} src="/logo192.png" width={200} height={200} alt="Picture of the author" />
+        </div>
+        <p className={styles.description}>
+          lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p className={styles.description}>
+          lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
+        </p>
+      </div>
+      <Divider />
+      <Technologies />
+
+      <Divider />
+      <Projects />
+      <Contact />
+      <Divider />
+      <Footer />
+    </main>
   );
 }
-
-export default App;
+{
+  /* <Routes>
+<Route path="#contact" element={<Contact />} />
+<Route path="/technologies" element={<Technologies />} />
+{/* <Route path="/projects" element={<Projects />} /> </Routes> */
+}

@@ -1,0 +1,13 @@
+.footer {
+    background-color: #c4c4c4 !important; /* Cambia el color de fondo según tus preferencias */
+   
+    padding-bottom: 2rem !important;
+    padding-top: 0.1rem !important;
+    position: fixed;
+    height: 3rem !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Asegura que el Footer esté por encima del contenido si es necesario */
+    text-align: center;
+  }
