@@ -1,67 +1,46 @@
-import * as React from "react";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, Twitter, GitHub } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import styles from "./Footer.module.css";
-export default function Footer() {
-  return (
-    <Box
-      component="footer"
-      className={styles.footer}
-      sx={{
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light" ? theme.palette.grey[200] : theme.palette.grey[800],
-        p: 6,
-      }}
-    >
-      <Container maxWidth="lg">
-        <Grid container spacing={5}>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              About Me
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              We are XYZ company, dedicated to providing the best service to our customers.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              Contact Me
-            </Typography>
 
-            <Typography variant="body2" color="text.secondary">
-              Email: matiasmarensi@gmail.com
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              Follow Us
-            </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  return (
+    <div className={`container-fluid ${styles.container}`}>
+      <footer className="text-center text-lg-start" style={{ backgroundColor: "#c4c4c4" }}>
+        <div className="container d-flex justify-content-center py-2">
+          <Link
+            href="https://github.com/matiasmarensi"
+            target="_blank" // Abre el enlace en una nueva pestaña
+            rel="noopener noreferrer" // Buenas prácticas de seguridad
+            className=" mx-2"
+            style={{ border: "solid .1rem #010101", borderRadius: "20rem " }}
+          >
+            <IconButton style={{ backgroundColor: "#c4c4c4" }}>
               <GitHub />
-            </Link>
-            <Link href="https://www.instagram.com/" color="inherit" sx={{ pl: 1, pr: 1 }}>
-              <Instagram />
-            </Link>
-            <Link href="https://www.twitter.com/" color="inherit">
-              <Twitter />
-            </Link>
-          </Grid>
-        </Grid>
-        <Box mt={5}>
-          <Typography variant="body2" color="text.secondary" align="center">
-            {"Copyright © "}
-            <Link color="inherit" href="https://your-website.com/">
-              Your Website
-            </Link>{" "}
-            {new Date().getFullYear()}
-            {"."}
-          </Typography>
-        </Box>
-      </Container>
-    </Box>
+            </IconButton>
+          </Link>
+          <button
+            type="button"
+            className="btn btn-primary btn-lg btn-floating mx-2"
+            style={{ backgroundColor: "#2A476E" }}
+          >
+            <i className="fab fa-twitter"></i>
+          </button>
+        </div>
+
+        <a className="text-center text-white p-3" href="https://mdbootstrap.com/">
+          MDBootstrap.com
+          {currentYear}
+        </a>
+        <div className="text-center text-white p-3" style={{ backgroundColor: "#c4c4c4" }}></div>
+      </footer>
+    </div>
   );
 }

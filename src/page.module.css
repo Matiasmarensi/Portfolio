@@ -5,10 +5,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 7rem;
-  min-height: 100vh;
+padding-top: 6rem;
+
+  
   
  
+}
+.container{
+  width: 50%;
 }
 
 .title{
@@ -53,6 +57,7 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
+  padding-bottom: 2rem;
   font-family: 'Lato', sans-serif;
 }
 

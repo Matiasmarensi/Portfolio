@@ -5,6 +5,8 @@ import Contact from "./components/Contact/Contact";
 import Technologies from "./components/Technologies/Technologies";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import Swipper from "./components/Swipper/Swipper";
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -23,20 +25,14 @@ export default function Home() {
           ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
           adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
         </p>
-        <p className={styles.description}>
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
-        </p>
       </div>
       <Divider />
       <Technologies />
+      <Swipper />
+      <Divider />
 
-      <Divider />
-      <Projects />
       <Contact />
-      <Divider />
+
       <Footer />
     </main>
   );
