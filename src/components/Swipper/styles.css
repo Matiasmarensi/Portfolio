@@ -1,12 +1,15 @@
 
 .swiper {
-width: 40rem;
-height: 20rem;
+  padding-top: 2rem;
+width: 44vw;
+height: 44vh;
+
 }
 
 .swiper-slide {
+ 
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
   background: #fff;
 
   /* Center slide text vertically */
@@ -16,9 +19,10 @@ height: 20rem;
 }
 
 .swiper-slide img {
+  
   display: block;
-  width: 100rem;
-  height: 100rem;
+  width: 44vw;
+  height: 44vh;
   object-fit: cover;
 }
 

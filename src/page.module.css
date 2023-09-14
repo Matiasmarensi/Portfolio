@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .main {
   background:#2A476E;
 /* background: linear-gradient(180deg,#2A476E 29%,#bc2929 100%); */
@@ -7,23 +8,26 @@
   align-items: center;
 padding-top: 6rem;
 
-  
+font-family: 'Electrolize', sans-serif;
   
  
 }
 .container{
   width: 50%;
+  font-family: 'Electrolize', sans-serif;
 }
 
 .title{
-
+  font-family: 'Electrolize', sans-serif !important;
  color:#961010;
  font-family: 'Lato', sans-serif;
 
 }
 .subcontainer{
-  width: 100wv;
+  font-family: 'Electrolize', sans-serif;
   display: flex;
+  padding-bottom: 2rem;
+
 }
 .stack{
   width: 40%
@@ -32,6 +36,7 @@ padding-top: 6rem;
   width: 60%;
 }
 .perfil{
+  font-family: 'Electrolize', sans-serif;
   width: 40%;
   display: grid;
 }
@@ -45,7 +50,7 @@ padding-top: 6rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Electrolize', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .description {
@@ -57,8 +62,8 @@ padding-top: 6rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  padding-bottom: 2rem;
-  font-family: 'Lato', sans-serif;
+  
+  font-family: 'Electrolize', sans-serif;
 }
 
 .description a {

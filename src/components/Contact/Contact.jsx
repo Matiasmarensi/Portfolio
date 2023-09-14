@@ -1,12 +1,19 @@
-import React from "react";
 import styles from "./contact.module.css";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Contact() {
+  useEffect(() => {
+    AOS.init({
+      // Opciones de configuración de AOS (si es necesario)
+    });
+  }, []);
+
   return (
     <div className={styles.container} id="contact">
       <h1>Contact</h1>
       <div className={styles.subcontainer}>
-        <form className={styles.form}>
+        <form className={styles.form} data-aos="fade-up">
           <h2 className={styles.title}>Contact</h2>
           <div className={styles.formGroup}>
             <label className={styles.label}>Nombre:</label>
@@ -26,7 +33,7 @@ export default function Contact() {
             Enviar
           </button>
         </form>
-        <div className={styles.datos}>
+        <div className={styles.datos} data-aos="fade-left">
           <h3>hola</h3>
           <h3>hola</h3>
           <h3>hola</h3>

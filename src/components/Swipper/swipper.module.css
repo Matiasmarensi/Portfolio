@@ -1,0 +1,49 @@
+.container{
+    
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:80vw;
+   
+    color:#c4c4c4;
+    filter: drop-shadow(.32rem .1rem .2rem #000000);
+  }
+  /* Agrega estilos específicos para las SwiperSlides */
+.swiper-slide {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+   /* Espacio interior */
+}
+
+/* Estilos para el nombre del proyecto */
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* Estilos para los enlaces */
+.projectLinks {
+  display: flex;
+  justify-content: center;
+  gap:.5rem; /* Espacio entre los enlaces */
+}
+
+.projectLinks a {
+  text-decoration: none;
+  background-color: #007BFF; /* Color de fondo del enlace */
+  color: white; /* Color del texto del enlace */
+  padding: .5rem; /* Espaciado interno del enlace */
+  border-radius: 1rem; /* Bordes redondeados del enlace */
+  transition: background-color 0.3s ease; /* Transición al pasar el mouse sobre el enlace */
+}
+
+.projectLinks a:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}

@@ -26,10 +26,9 @@ export default function Home() {
           adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
         </p>
       </div>
-      <Divider />
+
       <Technologies />
       <Swipper />
-      <Divider />
 
       <Contact />
 

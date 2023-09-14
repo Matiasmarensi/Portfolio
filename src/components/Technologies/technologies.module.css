@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 .container {
-  margin-top: 0.1rem;
-  font-family: 'Lato', sans-serif;
-  
+ 
+  font-family: 'Electrolize', sans-serif;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 100vh;
   width:80vw;
  
   color:#c4c4c4;
@@ -97,7 +97,7 @@
 .pText {
  
   margin: auto;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Electrolize', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   color: rgb(0, 0, 0);

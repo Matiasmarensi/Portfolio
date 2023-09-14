@@ -1,8 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .container{
+  font-family: 'Electrolize', sans-serif !important;
  
-  font-family: 'Lato', sans-serif;
-  
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,12 +35,12 @@
     box-shadow: 0.1rem 0.1rem 0rem #000000;
    
     background-color: #c4c4c4;
-    margin-bottom: 12rem !important;
+    
     
   }
   
   .title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #2A476E;
@@ -48,7 +49,7 @@
   }
   
   .label {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     display: block;
    
     ;
@@ -57,7 +58,7 @@
   }
   
   .input {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     width: 100%;
     padding: .2rem;
     margin-bottom: 1rem;
@@ -82,7 +83,7 @@
     /* ... tus otros estilos ... */
   }
   .inputname{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     width: 70%;
     padding: .5rem;
     margin-bottom: .5rem;
@@ -98,7 +99,7 @@
     border-radius: 0; /* Elimina cualquier borde redondeado */
   }
   .inputmail{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     width: 70%;
     padding: .5rem;
     margin-bottom: .5rem;
@@ -117,6 +118,7 @@
   
   
   .button {
+    font-family: 'Electrolize', sans-serif;
     background-color: #961010;
     color: #fbfbfb;
     width: auto; /* El ancho se ajustará al contenido */
@@ -135,4 +137,3 @@
     background-color: #c4c4c4;
     transform: scale(1.1);
   }
-  

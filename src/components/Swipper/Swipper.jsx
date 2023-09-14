@@ -6,15 +6,32 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import styles from "./swipper.module.css";
 import "./styles.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
 export default function App() {
+  const projects = [
+    {
+      name: "Proyecto 1",
+      background: "imagen1.jpg",
+      repoLink: "https://github.com/tuusuario/proyecto1",
+      deployLink: "https://deploy1.com",
+    },
+    {
+      name: "Videogames API",
+      background: "/videogames2.jpg",
+      repoLink: "https://github.com/tuusuario/proyecto2",
+      deployLink: "https://deploy2.com",
+    },
+    // Agrega más proyectos aquí
+  ];
+
   return (
-    <>
+    <div className={styles.container} id="projects">
+      <h1>Projects</h1>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -26,18 +43,32 @@ export default function App() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="./redux.png" alt="Redux" />
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {projects.map((project, index) => (
+          <SwiperSlide
+            key={index}
+            className={styles.slide}
+            style={{
+              backgroundImage: `url(${project.background})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className={styles.projectSlide}>
+              <div className={styles.projectContent}>
+                <h2>{project.name}</h2>
+                <div className={styles.projectLinks}>
+                  <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
+                    Repository
+                  </a>
+                  <a href={project.deployLink} target="_blank" rel="noopener noreferrer">
+                    Deploy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </>
+    </div>
   );
 }
