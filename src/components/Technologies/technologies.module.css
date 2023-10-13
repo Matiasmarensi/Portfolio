@@ -78,7 +78,7 @@
 
 .rowContainer{
 
-  filter: drop-shadow(.0rem .010rem .0rem  #000000);
+  filter: drop-shadow(.02rem .0rem .0rem  #000000);
   display: flex;
   padding-left: 1rem;
   padding-right: 1rem;
