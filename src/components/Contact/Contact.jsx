@@ -1,5 +1,5 @@
 import styles from "./contact.module.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useForm, ValidationError } from "@formspree/react";
@@ -10,14 +10,33 @@ export default function Contact() {
     });
   }, []);
   const [state, handleSubmit] = useForm("xoqowdlg"); // Reemplaza 'your-formspree-endpoint' con tu endpoint real
+  const [formClean, setFormClean] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  if (state.succeeded) {
-    return (
-      <div className="container mt-5">
-        <div className="alert alert-success">¡Gracias por tu mensaje!</div>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      window.alert("mensaje enviado");
+      setFormClean({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+  }, [state.succeeded]);
+
+  const handleInputs = (e) => {
+    const { id, value } = e.target;
+
+    if (formClean[id] !== value) {
+      setFormClean({
+        ...formClean,
+        [id]: value,
+      });
+    }
+  };
   return (
     <div className={styles.container} id="contact">
       <h1>Contact</h1>
@@ -34,19 +53,42 @@ export default function Contact() {
             <label htmlFor="name" className={styles.label}>
               Nombre:
             </label>
-            <input type="name" id="name" name="name" className={styles.inputname} required />
+            <input
+              value={formClean.name}
+              type="name"
+              id="name"
+              name="name"
+              className={styles.inputname}
+              onChange={handleInputs}
+              required
+            />
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="email" className={styles.label}>
               Correo Electrónico:
             </label>
-            <input className={styles.inputmail} type="email" id="email" name="email" required />
+            <input
+              className={styles.inputmail}
+              type="email"
+              id="email"
+              name="email"
+              value={formClean.email}
+              onChange={handleInputs}
+              required
+            />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
           </div>
 
           <div className={styles.formGroup}>
             <label className={styles.label}>Mensaje:</label>
-            <textarea className={styles.input} id="message" name="message" required />
+            <textarea
+              className={styles.input}
+              value={formClean.message}
+              onChange={handleInputs}
+              id="message"
+              name="message"
+              required
+            />
           </div>
 
           <button className={styles.button} type="submit" disabled={state.submitting}>
