@@ -1,12 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
-import { Facebook, Instagram, Twitter, GitHub, LinkedIn } from "@mui/icons-material";
-import { Box, IconButton } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 import styles from "./Footer.module.css";
 
 export default function Footer() {

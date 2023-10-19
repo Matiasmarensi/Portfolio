@@ -40,67 +40,70 @@ export default function Contact() {
   return (
     <div className={styles.container} id="contact">
       <h1>Contact</h1>
-      <div className={styles.subcontainer}>
-        <form
-          onSubmit={handleSubmit}
-          action="https://formspree.io/f/xoqowdlg"
-          method="POST"
-          className={styles.form}
-          data-aos="fade-up"
-        >
-          <h2 className={styles.title}>Contact</h2>
-          <div className={styles.formGroup}>
-            <label htmlFor="name" className={styles.label}>
-              Nombre:
-            </label>
-            <input
-              value={formClean.name}
-              type="name"
-              id="name"
-              name="name"
-              className={styles.inputname}
-              onChange={handleInputs}
-              required
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="email" className={styles.label}>
-              Correo Electrónico:
-            </label>
-            <input
-              className={styles.inputmail}
-              type="email"
-              id="email"
-              name="email"
-              value={formClean.email}
-              onChange={handleInputs}
-              required
-            />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
-          </div>
+      {!state.succeeded ? (
+        <div className={styles.subcontainer}>
+          <form
+            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xoqowdlg"
+            method="POST"
+            className={styles.form}
+            data-aos="fade-up"
+          >
+            <div className={styles.formGroup}>
+              <label htmlFor="name" className={styles.label}>
+                Nombre:
+              </label>
+              <input
+                value={formClean.name}
+                type="name"
+                id="name"
+                name="name"
+                className={styles.inputname}
+                onChange={handleInputs}
+                required
+              />
+            </div>
+            <div className={styles.formGroup}>
+              <label htmlFor="email" className={styles.label}>
+                Correo Electrónico:
+              </label>
+              <input
+                className={styles.inputmail}
+                type="email"
+                id="email"
+                name="email"
+                value={formClean.email}
+                onChange={handleInputs}
+                required
+              />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
+            </div>
 
-          <div className={styles.formGroup}>
-            <label className={styles.label}>Mensaje:</label>
-            <textarea
-              className={styles.input}
-              value={formClean.message}
-              onChange={handleInputs}
-              id="message"
-              name="message"
-              required
-            />
-          </div>
+            <div className={styles.formGroup}>
+              <label className={styles.label}>Mensaje:</label>
+              <textarea
+                className={styles.input}
+                value={formClean.message}
+                onChange={handleInputs}
+                id="message"
+                name="message"
+                required
+              />
+            </div>
 
-          <button className={styles.button} type="submit" disabled={state.submitting}>
-            Enviar
-          </button>
-        </form>
-        <div className={styles.datos} data-aos="fade-left">
+            <button className={styles.button} type="submit" disabled={state.submitting}>
+              Enviar
+            </button>
+          </form>
+          {/* <div className={styles.datos} data-aos="fade-left">
           <h3>hola</h3>
           <h3>hola</h3>
           <h3>hola</h3>
+        </div> */}
         </div>
-      </div>
+      ) : (
+        <p>Mensaje enviado con éxito</p>
+      )}
     </div>
   );
 }

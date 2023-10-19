@@ -1,53 +1,41 @@
-.container{
-    
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width:80vw;
-   
-    color:#c4c4c4;
-    filter: drop-shadow(.32rem .1rem .2rem #000000);
-  }
-  /* Agrega estilos específicos para las SwiperSlides */
-.swiper-slide {
-
+.container {
+  padding-top: 2rem;
+  font-family: 'Electrolize', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-   /* Espacio interior */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80vw;
+  color: #c4c4c4;
+  filter: drop-shadow(0.32rem 0.1rem 0.2rem #000000);
 }
 
-/* Estilos para el nombre del proyecto */
-h2 {
-  font-size: 3rem;
-  margin: 0;
+.container h1 {
+  padding: 2rem;
 }
 
-/* Estilos para los enlaces */
-.projectLinks {
-  display: flex;
-  
-  gap:.5rem; /* Espacio entre los enlaces */
-  display: flex;
-  justify-content: right;
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem; /* Aumenta el espacio entre las tarjetas a 2rem */
+  width: 100%;
+  max-width: 1200px; /* Establece un ancho máximo para el contenedor */
+  font-size: 1rem;
 }
 
-.projectLinks a {
-
-  text-decoration: none;
-  background-color: #007BFF;
-  opacity: .8; /* Color de fondo del enlace */
-  color: white; /* Color del texto del enlace */
-  padding: .5rem; /* Espaciado interno del enlace */
-  border-radius: 1rem; /* Bordes redondeados del enlace */
-  transition: background-color 0.3s ease; /* Transición al pasar el mouse sobre el enlace */
+.projectCard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
+  max-width: 400px; /* Aumenta el ancho máximo de las tarjetas a 400px */
+  margin: 0 auto; /* Centra horizontalmente las tarjetas */
 }
 
-.projectLinks a:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+.projectImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Establece un alto máximo para las imágenes */
 }

@@ -1,9 +1,9 @@
 import styles from "./page.module.css";
 import NavBar from "./components/NavBar/NavBar"; //
-import Divider from "./components/divider";
+
 import Contact from "./components/Contact/Contact";
 import Technologies from "./components/Technologies/Technologies";
-import Projects from "./components/Projects/Projects";
+
 import Footer from "./components/Footer/Footer";
 import Swipper from "./components/Swipper/Swipper";
 
