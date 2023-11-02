@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .main {
-  background:#2A476E;
-/* background: linear-gradient(180deg,#2A476E 29%,#bc2929 100%); */
+  background: rgb(42,71,110);
+  background: rgb(42,71,110);
+  background: linear-gradient(180deg, rgba(42,71,110,1) 0%, rgba(27,46,71,1) 50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

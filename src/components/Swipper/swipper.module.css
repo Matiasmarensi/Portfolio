@@ -7,35 +7,50 @@
   align-items: center;
   height: 100vh;
   width: 80vw;
-  color: #c4c4c4;
+  color: #2A476E;
   filter: drop-shadow(0.32rem 0.1rem 0.2rem #000000);
 }
 
+
 .container h1 {
   padding: 2rem;
+  color: #c4c4c4;
 }
 
 .projectContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem; /* Aumenta el espacio entre las tarjetas a 2rem */
-  width: 100%;
-  max-width: 1200px; /* Establece un ancho máximo para el contenedor */
-  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .projectCard {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  padding: 1rem;
-  width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
-  max-width: 400px; /* Aumenta el ancho máximo de las tarjetas a 400px */
-  margin: 0 auto; /* Centra horizontalmente las tarjetas */
+  width: 48%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
 }
 
 .projectImage {
   width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 300px; /* Establece un alto máximo para las imágenes */
+  max-height: 400px;
+  object-fit:fill;
+  border-radius: 5px;
+}
+.projectLinks {
+  margin-top: 10px;
+}
+.projectInfo {
+  text-align: center;
+}
+.projectLinks a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #007bff;
+}
+@media (max-width: 768px) {
+  .projectCard {
+    width: 100%;
+  }
 }
