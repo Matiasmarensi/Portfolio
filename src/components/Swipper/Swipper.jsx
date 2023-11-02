@@ -17,7 +17,7 @@ export default function App() {
       name: "Rick & Morty",
       background: "/rickmorty.jpg",
       repoLink: "https://github.com/tuusuario/proyecto1",
-      deployLink: "https://deploy1.com",
+      deployLink: "https://proyecto-integrador-jet.vercel.app/favorites",
     },
     {
       name: "Videogames",
