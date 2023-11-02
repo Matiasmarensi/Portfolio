@@ -2,15 +2,16 @@ import styles from "./swipper.module.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 export default function App() {
   useEffect(() => {
     AOS.init({
       once: false,
       duration: 1000,
-
       // Opciones de configuración de AOS (si es necesario)
     });
   }, []);
+
   const projects = [
     {
       name: "Rick & Morty",
@@ -28,8 +29,7 @@ export default function App() {
       name: "El Festín e-commerce",
       background: "/elfestin.jpg",
       repoLink: "https://github.com/Matiasmarensi/PF-Server",
-
-      deployLink: "https://pf-front-end-grupo3.vercel.app/home",
+      deployLink: "https://pf-front-end-grupo3.vercel.app/",
     },
     // Agrega más proyectos aquí
   ];
@@ -41,14 +41,14 @@ export default function App() {
         {projects.map((project, index) => (
           <div data-aos="flip-up" className={styles.projectCard} key={index}>
             <div className={styles.projectInfo}>
-              <img src={project.background} alt={project.name} className={styles.projectImage} />
               <h5>{project.name}</h5>
+              <a href={project.deployLink} target="_blank" rel="noopener noreferrer">
+                <img src={project.background} alt={project.name} className={styles.projectImage} />
+              </a>
+
               <div className={styles.projectLinks}>
                 <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
                   Repository
-                </a>
-                <a href={project.deployLink} target="_blank" rel="noopener noreferrer">
-                  Deploy
                 </a>
               </div>
             </div>

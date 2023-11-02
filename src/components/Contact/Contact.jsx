@@ -51,7 +51,7 @@ export default function Contact() {
           >
             <div className={styles.formGroup}>
               <label htmlFor="name" className={styles.label}>
-                Nombre:
+                Name:
               </label>
               <input
                 value={formClean.name}
@@ -65,7 +65,7 @@ export default function Contact() {
             </div>
             <div className={styles.formGroup}>
               <label htmlFor="email" className={styles.label}>
-                Correo Electrónico:
+                Email:
               </label>
               <input
                 className={styles.inputmail}
@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
 
             <div className={styles.formGroup}>
-              <label className={styles.label}>Mensaje:</label>
+              <label className={styles.label}>Message:</label>
               <textarea
                 className={styles.input}
                 value={formClean.message}
@@ -92,7 +92,7 @@ export default function Contact() {
             </div>
 
             <button className={styles.button} type="submit" disabled={state.submitting}>
-              Enviar
+              Send
             </button>
           </form>
           {/* <div className={styles.datos} data-aos="fade-left">
@@ -102,7 +102,7 @@ export default function Contact() {
         </div> */}
         </div>
       ) : (
-        <p>Mensaje enviado con éxito</p>
+        <p>Message sent successfully</p>
       )}
     </div>
   );

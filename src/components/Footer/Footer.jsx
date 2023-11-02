@@ -36,7 +36,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <p className="text-center text-white">Hecho con ❤️ por Matias Santiago Marensi ©{currentYear}</p>
+        <p className="text-center text-white">Created with ❤️ by Matias Santiago Marensi ©{currentYear}</p>
       </footer>
     </div>
   );
