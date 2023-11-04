@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={style.home}>
         <div className={style.subhome}>
           <a className={style.linkhome} href="#">
-            Home
+            {"ⓂⓂ "}
           </a>
         </div>
       </div>

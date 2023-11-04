@@ -25,6 +25,9 @@ export default function Home() {
           ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur
           adipisicing elit. Quas, quidem?lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem?
         </p>
+        <a className={styles.download} target="_blank" rel="noopener noreferrer" href="./MatiasMarensiDevFullStack.pdf">
+          <button> Descargar CV</button>
+        </a>
       </div>
 
       <Technologies />

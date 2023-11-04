@@ -7,7 +7,10 @@
     color: #2A476E;/* Esto asegura que los enlaces mantengan el color de texto predeterminado */
 }
 
-
+.linkhome{
+  font-family: 'Electrolize', sans-serif;
+  font-weight: bold;
+}
 .container{
   
     width: 100%;
@@ -36,14 +39,13 @@ font-family: 'Electrolize', sans-serif;
     color:#c4c4c4 ;
     font-family: 'Electrolize', sans-serif;
 font-size: 2rem;
-transition: 0.3s ease-in-out;
+
 
 
 
 }
 .subhome:hover {
-    text-shadow: .11rem .1rem .2rem #000000;
-    transform: scale(1.2);
+   
  
 }
 

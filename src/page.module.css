@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .main {
-  background: rgb(42,71,110);
-  background: rgb(42,71,110);
-  background: linear-gradient(180deg, rgba(42,71,110,1) 0%, rgba(27,46,71,1) 50%);
+  background:#2a476e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +10,33 @@ padding-top: 6rem;
 font-family: 'Electrolize', sans-serif;
   
  
+}
+a.download {
+  color:#2a476e;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #c4c4c4; /* Cambia este color a tu preferencia */
+  color: #fff; /* Color de texto */
+  padding: 10px 20px; /* Espacio interior del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold;
+ 
+  transition: transform 0.6s, box-shadow 0.3s;/* Transición suave al pasar el mouse */
+}
+
+/* Cambia el color de fondo al pasar el mouse */
+a.download:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del botón al 105% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+}
+
+/* Estilo para el texto dentro del botón */
+a.download button {
+  background: none;
+  border: none;
+ 
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
 }
 .container{
   width: 50%;
