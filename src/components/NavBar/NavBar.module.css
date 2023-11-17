@@ -4,7 +4,7 @@
 .container a {
     scroll-behavior: smooth;
     text-decoration: none; /* Agrega esta línea para quitar el subrayado */
-    color: #2A476E;/* Esto asegura que los enlaces mantengan el color de texto predeterminado */
+    color:#c4c4c4;/* Esto asegura que los enlaces mantengan el color de texto predeterminado */
 }
 
 .linkhome{
@@ -18,7 +18,9 @@
  
     justify-content: space-around;
     height: 8vh;
-    background-color:#c4c4c4;
+    background: rgb(255,87,51);
+    background: linear-gradient(0deg, rgba(255,87,51,0.5) 0%, hsla(350, 100%, 29%, 0.506) 73%);
+    z-index: 999;
     position: fixed !important;
     top:0;
     z-index: 9999;
@@ -30,7 +32,7 @@
 align-items: center;
 display: flex;
 width: 50%;
-background-color: #c4c4c4;
+
 font-family: 'Electrolize', sans-serif;
 
 
@@ -38,7 +40,7 @@ font-family: 'Electrolize', sans-serif;
 .subhome{
     color:#c4c4c4 ;
     font-family: 'Electrolize', sans-serif;
-font-size: 2rem;
+font-size: 1.5rem;
 
 
 
@@ -50,7 +52,7 @@ font-size: 2rem;
 .others{
     
     width: 30%;
-    background-color: #c4c4c4;
+  
     justify-content: space-around;
     display: flex;
     align-items: center;
@@ -85,7 +87,7 @@ font-size: 2rem;
   }
   .menuButton {
   display: none; /* Inicialmente, oculta el botón en pantallas grandes */
-  background: #2A476E;
+  background: #930019;
   color: #c4c4c4;
   font-size: 1.5rem;
   cursor: pointer;
@@ -96,7 +98,7 @@ font-size: 2rem;
 .menuList {
     display: none; /* Inicialmente, oculta la lista del menú */
     flex-direction: column; /* Cambia la dirección a vertical */
-    background: #2A476E;
+    background-image: linear-gradient(to right, #930019, #FF5733);
     color: #c4c4c4;
     position: absolute;
     top: 8vh;

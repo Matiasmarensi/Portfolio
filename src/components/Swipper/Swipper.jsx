@@ -42,15 +42,14 @@ export default function App() {
           <div data-aos="flip-up" className={styles.projectCard} key={index}>
             <div className={styles.projectInfo}>
               <h5>{project.name}</h5>
-              <a href={project.deployLink} target="_blank" rel="noopener noreferrer">
-                <img src={project.background} alt={project.name} className={styles.projectImage} />
-              </a>
-
               <div className={styles.projectLinks}>
                 <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
                   Repository
                 </a>
               </div>
+              <a href={project.deployLink} target="_blank" rel="noopener noreferrer">
+                <img src={project.background} alt={project.name} className={styles.projectImage} />
+              </a>
             </div>
           </div>
         ))}

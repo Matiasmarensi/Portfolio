@@ -10,7 +10,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <div className={`container-fluid ${styles.container}`}>
-      <footer className="text-center text-lg-start py-2" style={{ backgroundColor: "#c4c4c4" }}>
+      <footer
+        className="text-center text-lg-start py-2"
+        style={{ background: " linear-gradient(0deg, rgba(255,87,51,0.5) 0%, hsla(350, 100%, 29%, 0.506) 73%)" }}
+      >
         <div className="container d-flex justify-content-center py-2">
           <Link
             href="https://github.com/matiasmarensi"

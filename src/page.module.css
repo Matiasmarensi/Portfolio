@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .main {
   background:#2a476e;
+  background-image: url("../public/keyboard.avif");
+  background-attachment:fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,12 +14,18 @@ font-family: 'Electrolize', sans-serif;
   
  
 }
+.links{
+
+  display: flex;
+ justify-content:start;
+ gap:1rem
+}
 a.download {
-  color:#2a476e;
+  color:rgba(147,0,25,0.5047268907563025);
   display: inline-block;
   text-decoration: none;
-  background-color: #c4c4c4; /* Cambia este color a tu preferencia */
-  color: #fff; /* Color de texto */
+  background-color: rgba(147,0,25); /* Cambia este color a tu preferencia */
+  color: #c4c4c4; /* Color de texto */
   padding: 10px 20px; /* Espacio interior del botón */
   border-radius: 5px; /* Bordes redondeados */
   font-weight: bold;
@@ -29,14 +38,25 @@ a.download:hover {
   transform: scale(1.05); /* Aumenta el tamaño del botón al 105% */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
 }
+.image {
+
+    /* Ajusta automáticamente la altura para mantener la proporción */
+  object-fit:contain; /* Ajusta la imagen manteniendo su relación de aspecto sin deformarse */
+}
 
 /* Estilo para el texto dentro del botón */
 a.download button {
+  
   background: none;
   border: none;
  
   font-size: 16px; /* Tamaño del texto */
   cursor: pointer;
+}
+.perfil{
+  color:#c4c4c4;
+  font-weight: bold;
+  text-decoration:solid;
 }
 .container{
   width: 50%;
@@ -45,30 +65,32 @@ a.download button {
 
 .title{
   font-family: 'Electrolize', sans-serif !important;
- color:#961010;
+ color:#c4c4c4;
  font-family: 'Lato', sans-serif;
 
 }
 .subcontainer{
+  gap:2rem;
   font-family: 'Electrolize', sans-serif;
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
 }
-.stack{
-  width: 40%
-}
-.image{
-  width: 60%;
+
+.image {
+  width: 10rem;
+  height: auto;  /* Ajusta automáticamente la altura para mantener la proporción */
+  object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto sin deformarse */
 }
 .perfil{
   font-family: 'Electrolize', sans-serif;
   width: 40%;
-  display: grid;
+  display: flex;
+  gap: 20%;
 }
 .subtitle{
   
-  color: #961010;
+  color: #c4c4c4;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;

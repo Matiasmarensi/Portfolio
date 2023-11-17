@@ -82,7 +82,7 @@ export default function Contact() {
             <div className={styles.formGroup}>
               <label className={styles.label}>Message:</label>
               <textarea
-                className={styles.input}
+                className={styles.inputname}
                 value={formClean.message}
                 onChange={handleInputs}
                 id="message"
