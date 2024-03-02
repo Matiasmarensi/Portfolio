@@ -31,7 +31,7 @@ export default function Home() {
             className={styles.download}
             target="_blank"
             rel="noopener noreferrer"
-            href="./MatiasMarensiDevFullStack.pdf"
+            href="./Resume_MatiasMarensi_DevFullstack.pdf"
           >
             <button> Download Resume</button>
           </a>

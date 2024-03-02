@@ -31,6 +31,19 @@ export default function App() {
       repoLink: "https://github.com/Matiasmarensi/PF-Server",
       deployLink: "https://pf-front-end-grupo3.vercel.app/",
     },
+    {
+      name: "NextAuthentication",
+      background: "/nextauth.jpg",
+      repoLink: "https://github.com/Matiasmarensi/NextAuth",
+      deployLink: "https://nextauth-production.up.railway.app/",
+    },
+    {
+      name: "ToDo",
+      deployLink: "https://todo-sooty-xi.vercel.app/new",
+      repoLink: "https://github.com/Matiasmarensi/ToDoNextjs",
+      background: "/Todo.jpg",
+    },
+
     // Agrega más proyectos aquí
   ];
 

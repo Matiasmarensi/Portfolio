@@ -17,6 +17,7 @@ export default function Technologies() {
     { name: "HTML", icon: "/html7.png", width: defaultWidth },
     { name: "CSS", icon: "/css2.png", width: defaultWidth },
     { name: "React", icon: "/react2.png", width: defaultWidth },
+    { name: "Next", icon: "/next.png", width: defaultWidth },
     { name: "Javascript", icon: "/js2.png", width: defaultWidth },
     { name: "Redux", icon: "/redux.png", width: defaultWidth },
   ];
@@ -26,6 +27,7 @@ export default function Technologies() {
     { name: "Sequelize", icon: "/sequelize.png", width: defaultWidth },
     { name: "Express", icon: "/express1.png", width: defaultWidth },
     { name: "PostgreSQL", icon: "/postgress4.png", width: defaultWidth },
+    { name: "MongoDB", icon: "/mongodb.png", width: defaultWidth },
     { name: "Github", icon: "/github7.png", width: defaultWidth },
   ];
 
