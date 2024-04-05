@@ -32,6 +32,12 @@ export default function App() {
       deployLink: "https://pf-front-end-grupo3.vercel.app/",
     },
     {
+      name: "Conexión Huellitas",
+      background: "/huellitas.jpg",
+      repoLink: "https://github.com/No-Country/c16-23-n-node-react",
+      deployLink: "https://c16-23-n-node-react.vercel.app/",
+    },
+    {
       name: "NextAuthentication",
       background: "/nextauth.jpg",
       repoLink: "https://github.com/Matiasmarensi/NextAuth",
