@@ -79,8 +79,11 @@ a.download button {
 
 .image {
   width: 10rem;
+
   height: auto;  /* Ajusta automáticamente la altura para mantener la proporción */
   object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto sin deformarse */
+mask-image: linear-gradient(black 80%, transparent 100%);
+
 }
 .perfil{
   font-family: 'Electrolize', sans-serif;
