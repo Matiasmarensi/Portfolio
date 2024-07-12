@@ -23,6 +23,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>M.M.</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const originalTitle = "Matias Marensi";
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          document.title = "Come back!";
+        } else {
+          document.title = originalTitle;
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>

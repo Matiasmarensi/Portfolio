@@ -19,6 +19,7 @@ export default function Technologies() {
     { name: "React", icon: "/react2.png", width: defaultWidth },
     { name: "Next", icon: "/next.png", width: defaultWidth },
     { name: "Javascript", icon: "/js2.png", width: defaultWidth },
+    { name: "Typescript", icon: "/typescript.png", width: defaultWidth },
     { name: "Redux", icon: "/redux.png", width: defaultWidth },
   ];
 

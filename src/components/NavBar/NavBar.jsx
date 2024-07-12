@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className={style.home}>
         <div className={style.subhome}>
           <a className={style.linkhome} href="#">
-            {"Ⓜatias Ⓜarensi "}
+            {"Matias Marensi "}
           </a>
         </div>
       </div>
@@ -23,11 +23,11 @@ const Navbar = () => {
       </button>
 
       <div className={style.menuList}>
-        <a href="#technologies" style={{ color: "#fff" }}>
-          Technologies
-        </a>
         <a href="#projects" style={{ color: "#fff" }}>
           Projects
+        </a>
+        <a href="#technologies" style={{ color: "#fff" }}>
+          Technologies
         </a>
         <a href="#contact" style={{ color: "#fff" }}>
           Contact
@@ -35,11 +35,11 @@ const Navbar = () => {
       </div>
 
       <div className={`${style.others} ${menuOpen && ""}`}>
-        <div className={style.technologies}>
-          <a href="#technologies">Technologies</a>
-        </div>
         <div className={style.projects}>
           <a href="#projects">Projects</a>
+        </div>
+        <div className={style.technologies}>
+          <a href="#technologies">Technologies</a>
         </div>
         <div className={style.contact}>
           <a href="#contact">Contact</a>

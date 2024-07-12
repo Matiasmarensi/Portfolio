@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Fira+Sans:ital,wght@0,400;0,500;1,300;1,400&family=Lato&family=Overpass&family=Roboto:wght@500&display=swap');
 .main {
-  background:#2a476e;
+  background: #2a476e;
   background-image: url("../public/keyboard.avif");
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-padding-top: 6rem;
-
-font-family: 'Electrolize', sans-serif;
-  
- 
+  padding-top: 6rem;
+  font-family: 'Electrolize', sans-serif;
 }
 .links{
 

@@ -60,8 +60,8 @@ export default function Home() {
         </div>
       </div>
 
-      <Technologies />
       <Swipper />
+      <Technologies />
 
       <Contact />
 
