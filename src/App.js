@@ -8,17 +8,19 @@ import { IconButton } from "@mui/material";
 
 import Footer from "./components/Footer/Footer";
 import Swipper from "./components/Swipper/Swipper";
+import ParticlesComponent from "./components/particles/Particles";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <NavBar />
+      <ParticlesComponent id="tsparticles" />
       <div className={styles.container}>
         <div className={styles.subcontainer}>
           <div className={styles.perfil}>
             <h1 className={styles.title}>Hello! I'm Matias! </h1>
 
-            <img className={styles.image} src="/image.png" alt="Picture of the author" />
+            <img className={styles.image} src="/image.png" alt="author" />
           </div>
         </div>
         <p className={styles.description}>
@@ -33,28 +35,21 @@ export default function Home() {
             rel="noopener noreferrer"
             href="./Resume_MatiasMarensi_DevFullstack.pdf"
           >
-            <button> Download Resume</button>
+            Download Resume
           </a>
-          <Link
-            href="https://github.com/matiasmarensi"
-            target="_blank" // Abre el enlace en una nueva pestaña
-            rel="noopener noreferrer" // Buenas prácticas de seguridad
-            className=" mx-2"
-            style={{}}
-          >
-            <IconButton style={{ backgroundColor: "hsla(350, 100%, 29%)", color: "black" }}>
-              <GitHub />
+          <Link href="https://github.com/matiasmarensi" target="_blank" rel="noopener noreferrer" className="mx-2">
+            <IconButton>
+              <GitHub style={{ fontSize: "4rem" }} />
             </IconButton>
           </Link>
           <Link
             href="https://www.linkedin.com/in/matias-marensi-67059823/"
-            target="_blank" // Abre el enlace en una nueva pestaña
-            rel="noopener noreferrer" // Buenas prácticas de seguridad
-            className=" mx-1"
-            style={{}}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-1"
           >
-            <IconButton style={{ backgroundColor: "hsla(350, 100%, 29%)", color: "black" }}>
-              <LinkedIn />
+            <IconButton>
+              <LinkedIn style={{ fontSize: "4rem" }} />
             </IconButton>
           </Link>
         </div>
@@ -68,10 +63,4 @@ export default function Home() {
       <Footer />
     </main>
   );
-}
-{
-  /* <Routes>
-<Route path="#contact" element={<Contact />} />
-<Route path="/technologies" element={<Technologies />} />
-{/* <Route path="/projects" element={<Projects />} /> </Routes> */
 }

@@ -11,30 +11,43 @@
   align-items: center;
   padding-top: 6rem;
   font-family: 'Electrolize', sans-serif;
+ 
 }
-.links{
-
+.particles canvas {
+  z-index:-1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.links {
   display: flex;
- justify-content:start;
- gap:1rem
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 1rem;
 }
 a.download {
-  color:rgba(147,0,25,0.5047268907563025);
-  display: inline-block;
+  color: rgba(147, 0, 25, 0.5);
   text-decoration: none;
-  background-color: rgba(147,0,25); /* Cambia este color a tu preferencia */
-  color: #c4c4c4; /* Color de texto */
-  padding: 10px 20px; /* Espacio interior del botón */
-  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(147, 0, 25);
+  color: #c4c4c4;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-weight: bold;
- 
-  transition: transform 0.6s, box-shadow 0.3s;/* Transición suave al pasar el mouse */
+  border: 0.1rem solid black;
+  transition: transform 0.6s, box-shadow 0.3s;
+  text-align: center;
+  white-space: nowrap; /* Para evitar que el texto se divida en varias líneas */
 }
 
 /* Cambia el color de fondo al pasar el mouse */
 a.download:hover {
-  transform: scale(1.05); /* Aumenta el tamaño del botón al 105% */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.links .MuiIconButton-root {
+  flex-shrink: 0; /* Evita que los iconos reduzcan su tamaño */
+  background-color: hsla(350, 100%, 29%);
+  color: black;
 }
 .image {
 
@@ -59,6 +72,7 @@ a.download button {
 .container{
   width: 50%;
   font-family: 'Electrolize', sans-serif;
+  z-index:9999;
 }
 
 .title{
@@ -74,6 +88,7 @@ a.download button {
   padding-bottom: 1rem;
 
 }
+
 
 .image {
   width: 10rem;
