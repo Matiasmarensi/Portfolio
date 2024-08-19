@@ -5,14 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
   width: 80vw;
   color: #c4c4c4;
   filter: drop-shadow(0.32rem 0.1rem 0.2rem #000000);
-
-
 }
-
 
 .container h1 {
   padding: 2rem;
@@ -25,6 +21,15 @@
   justify-content: space-between;
   margin: auto;
 }
+
+.projectCard {
+  width: 48%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 .projectCard::before {
   content: "";
   position: absolute;
@@ -39,36 +44,46 @@
   z-index: -1; 
 }
 
-.projectCard {
-  position: relative; 
-  width: 48%;
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+.projectImage {
+  width: 100%;
+  height: 250px; /* Fija la altura de las imágenes */
+  object-fit: cover; /* Mantiene el aspecto de la imagen y recorta si es necesario */
   border-radius: 5px;
 }
 
-.projectImage {
-  
-  width: 100%;
-  max-height: 400px;
-  object-fit:fill;
-  border-radius: 5px;
-}
-.projectLinks {
-  margin-top: 10px;
-}
 .projectInfo {
   text-align: center;
+  margin-top: 10px;
 }
+
+.projectInfo h5 {
+  margin: 0;
+}
+
+.projectDescription {
+  margin: 10px 0;
+}
+
 .projectLinks a {
-
-
-  display: block;
-  
-  text-decoration: none;
   color: #c4c4c4;
+  text-decoration: none;
+  background-color: rgba(147, 0, 25);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 0.1rem solid black;
+  transition: transform 0.6s, box-shadow 0.3s;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: .5rem;
 }
+
+.projectLinks a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
   .projectCard {
     width: 100%;
