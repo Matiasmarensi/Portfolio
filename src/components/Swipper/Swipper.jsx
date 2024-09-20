@@ -15,6 +15,13 @@ export default function App() {
 
   const projects = [
     {
+      name: "Chat App",
+      deployLink: "https://chatapp-xhvh.onrender.com/",
+      repoLink: "https://github.com/Matiasmarensi/ChatApp",
+      background: "/chatapp.jpg",
+      description: "A real-time chat application.",
+    },
+    {
       name: "Rick & Morty",
       background: "/rickmorty.jpg",
       repoLink: "https://github.com/tuusuario/proyecto1",
@@ -42,13 +49,7 @@ export default function App() {
       deployLink: "https://c16-23-n-node-react.vercel.app/",
       description: "An app to connect pet lovers with adoption centers.",
     },
-    {
-      name: "NextAuthentication",
-      background: "/nextauth.jpg",
-      repoLink: "https://github.com/Matiasmarensi/NextAuth",
-      deployLink: "https://nextauth-production.up.railway.app/",
-      description: "Secure authentication using Next.js.",
-    },
+
     {
       name: "ToDo",
       deployLink: "https://todo-sooty-xi.vercel.app/new",
