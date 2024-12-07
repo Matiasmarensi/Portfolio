@@ -1,6 +1,6 @@
 import React from "react";
 import { BaseInfo } from "@/Data/data";
-import { FaDownload, FaDownLong } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6";
 import Image from "next/image";
 
 const Hero = () => {
