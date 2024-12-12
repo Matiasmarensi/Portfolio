@@ -25,7 +25,7 @@ const NavBar = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div className={`fixed${navBg ? " bg-cyan-600" : ""} h-[12vh] z-[10] w-full transition-all duration-500 `}>
+    <div className={`fixed${navBg ? " bg-gray-600" : ""} h-[12vh] z-[10] w-full transition-all duration-500 `}>
       <div className="flex justify-between items-center h-full  w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         <Image src="/images/logo.png" alt="LOGO" width={170} height={170} className="ml-[-1.5rem] sm:ml-0" />
         <div className=" text-white items-center space-x-10 flex ">

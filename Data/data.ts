@@ -1,19 +1,19 @@
 export const BaseInfo = {
-  name: "Matias Marensi",
-  position: "Full Stack Web Developer",
+  name: "Matias Santiago Marensi",
+  position: "Desarrollador Web Full Stack",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
-  profilePic: "/images/hero.png",
+    "Desarrollador con experiencia en JavaScript, Node.js y React.js. He trabajado en proyectos individuales y grupales, enfocado en crear soluciones funcionales y eficientes. Busco seguir creciendo en entornos colaborativos y contribuir con mis habilidades técnicas.",
+  profilePic: "/images/matias.jpg",
 };
 
 export const aboutInfo = {
-  title: "Crafting Web Application with Passion and Precision",
+  title: "Soluciones Web Funcionales y Eficientes",
   description:
-    "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
-  client: "50+",
-  experience: "3+",
-  project: "200+",
-  website: "100+",
+    "Soy un desarrollador especializado en la creación de aplicaciones web adaptadas a las necesidades de cada proyecto. Mi objetivo es ofrecer resultados claros y prácticos que mejoren los procesos de las empresas.",
+  client: "Motivación y aprendizaje continuo",
+  experience: "Formación y proyectos",
+  project: "Desafíos aceptados",
+  website: "Metas futuras",
 };
 
 export const servicesData = [
@@ -70,106 +70,166 @@ export const servicesData = [
 export const projectData = [
   {
     id: 1,
-    image: "/images/p1.png",
-    url: "https://agency-opal-eight.vercel.app/",
+    image: "/chatapp.jpg",
+    url: "https://chatapp-xhvh.onrender.com/",
   },
   {
     id: 2,
-    image: "/images/p2.png",
-    url: "https://burger-pearl.vercel.app/",
+    image: "/rickmorty.jpg",
+    url: "https://proyecto-integrador-jet.vercel.app/favorites",
   },
   {
     id: 3,
-    image: "/images/p3.png",
-    url: "https://game-ecommerce-yt.vercel.app/",
+    image: "/videogames2.jpg",
+    url: "https://video-games-git-main-matiasmarensi.vercel.app/",
   },
   {
     id: 4,
-    image: "/images/p4.png",
-    url: "https://elearning-yt.vercel.app/",
+    image: "/elfestin.jpg",
+    url: "https://pf-front-end-grupo3.vercel.app/",
   },
   {
     id: 5,
-    image: "/images/p5.png",
-    url: "https://invest-peach.vercel.app/",
+    image: "/huellitas.jpg",
+    url: "https://c16-23-n-node-react.vercel.app/",
   },
   {
     id: 6,
-    image: "/images/p6.png",
-    url: "https://job-chi-ruby.vercel.app/",
-  },
-  {
-    id: 7,
-    image: "/images/p7.png",
-    url: "https://wdw-ecom.vercel.app/",
-  },
-  {
-    id: 8,
-    image: "/images/p8.png",
-    url: "https://webhost-ten.vercel.app/",
+    image: "/Todo.jpg",
+    url: "https://todo-sooty-xi.vercel.app/new",
   },
 ];
 
 export const skillsData = [
+  // Frontend
   {
     id: 1,
     title: "React",
     image: "/images/react.svg",
-    percent: "90%",
   },
   {
     id: 2,
     title: "CSS",
     image: "/images/css.svg",
-    percent: "97%",
   },
   {
     id: 3,
-    title: "JavaScript",
-    image: "/images/js.svg",
-    percent: "77%",
+    title: "HTML",
+    image: "/images/html.svg",
   },
   {
     id: 4,
     title: "TypeScript",
     image: "/images/ts.svg",
-    percent: "67%",
   },
   {
     id: 5,
-    title: "HTML",
-    image: "/images/html.svg",
-    percent: "67%",
+    title: "Tailwind CSS",
+    image: "/images/tailwind.svg",
   },
   {
     id: 6,
-    title: "Node JS",
-    image: "/images/node.svg",
-    percent: "77%",
+    title: "Next.js",
+    image: "/images/nextjs.svg",
   },
   {
     id: 7,
-    title: "MongoDB",
-    image: "/images/mongo.svg",
-    percent: "65%",
+    title: "Redux",
+    image: "/images/redux.svg",
   },
   {
     id: 8,
-    title: "Python",
-    image: "/images/python.svg",
-    percent: "55%",
+    title: "Astro",
+    image: "/images/astro.svg",
   },
+
+  // Backend
   {
     id: 9,
-    title: "Firebase",
-    image: "/images/firebase.svg",
-    percent: "75%",
+    title: "Node JS",
+    image: "/images/node.svg",
   },
   {
     id: 10,
-    title: "Vue",
-    image: "/images/vue.svg",
-    percent: "35%",
+    title: "Express",
+    image: "/images/express.svg",
+  },
+  {
+    id: 11,
+    title: "MongoDB",
+    image: "/images/mongo.svg",
+  },
+  {
+    id: 12,
+    title: "PostgreSQL",
+    image: "/images/postgresql.svg",
+  },
+  {
+    id: 13,
+    title: "MySQL",
+    image: "/images/mysql.svg",
+  },
+  {
+    id: 14,
+    title: "Prisma",
+    image: "/images/prisma.svg",
+  },
+  {
+    id: 15,
+    title: "Socket.io",
+    image: "/images/socket.svg",
+  },
+  {
+    id: 16,
+    title: "Sequelize",
+    image: "/images/sequelize.svg",
+  },
+  {
+    id: 17,
+    title: "Postman",
+    image: "/images/postman.svg",
+  },
+  {
+    id: 18,
+    title: "Puppeteer",
+    image: "/images/puppeteer.svg",
+  },
+  {
+    id: 19,
+    title: "JWT",
+    image: "/images/jwt.svg",
+  },
+
+  // Tools
+  {
+    id: 20,
+    title: "GitHub",
+    image: "/images/github.svg",
+  },
+  {
+    id: 21,
+    title: "Docker",
+    image: "/images/docker.svg",
+  },
+  {
+    id: 22,
+    title: "AWS",
+    image: "/images/aws.svg",
+  },
+  {
+    id: 23,
+    title: "Jest",
+    image: "/images/jest.svg",
+  },
+  {
+    id: 24,
+    title: "Slack",
+    image: "/images/slack.svg",
+  },
+  {
+    id: 25,
+    title: "Teams",
+    image: "/images/teams.svg",
   },
 ];
 
@@ -227,9 +287,8 @@ export const blogs = [
     image: "/images/b3.jpg",
   },
 ];
-
 export const contactData = {
-  phone: "+88(012345 789)",
-  email: "example@gmail.com",
-  address: "Dhaka , Bangladesh",
+  phone: "+54 11 6686-0950",
+  email: "matiasmarensi@gmail.com",
+  address: "Buenos Aires, Argentina",
 };
