@@ -44,7 +44,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
+    <div className="bg-[#0c0f1c] rounded-lg p-4 sm:p-10">
       <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">Contact Us</h1>
       <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta esse neque rerum? Iste velit doloremque harum
@@ -121,7 +121,7 @@ const ContactForm = () => {
         <div className="mt-4">
           <button
             type="submit"
-            className="px-8 py-3.5 bg-[#7947df] text-white hover:bg-[#5c2fb7] transition-all duration-150 rounded-full"
+            className="px-8 py-3.5 bg-[#d97706] text-white hover:bg-[#ffb74d] transition-all duration-150 rounded-full"
             disabled={state.submitting}
           >
             Send Message
