@@ -12,6 +12,9 @@ const font = Electrolize({
 export const metadata: Metadata = {
   title: "Matias Marensi Fullstack",
   description: "Portfolio personal de Matias Marensi como Fullstack Developer.",
+  icons: {
+    icon: "/images/favicon.ico", // Ruta al favicon en la carpeta public
+  },
   openGraph: {
     title: "Matias Marensi Fullstack",
     description: "Explora mi portfolio y proyectos como Fullstack Developer.",
