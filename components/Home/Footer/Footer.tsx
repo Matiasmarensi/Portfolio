@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { Logo } from "../Logo/Logo";
 
