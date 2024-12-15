@@ -70,33 +70,39 @@ export const servicesData = [
 export const projectData = [
   {
     id: 1,
-    image: "/chatapp.jpg",
+    image: "/images/chatapp.jpg",
     url: "https://chatapp-xhvh.onrender.com/",
+    description: "Una aplicación de chat en tiempo real.",
   },
   {
     id: 2,
-    image: "/rickmorty.jpg",
+    image: "/images/rickmorty.jpg",
     url: "https://proyecto-integrador-jet.vercel.app/favorites",
+    description: "Una aplicación para explorar personajes de la serie Rick & Morty.",
   },
   {
     id: 3,
-    image: "/videogames2.jpg",
+    image: "/images/videogames.jpg",
     url: "https://video-games-git-main-matiasmarensi.vercel.app/",
+    description: "Una plataforma para crear, descubrir y reseñar videojuegos.",
   },
   {
     id: 4,
-    image: "/elfestin.jpg",
+    image: "/images/elfestin.jpg",
     url: "https://pf-front-end-grupo3.vercel.app/",
+    description: "Plataforma de comercio electrónico para productos alimenticios.",
   },
   {
     id: 5,
-    image: "/huellitas.jpg",
+    image: "/images/huellitas.jpg",
     url: "https://c16-23-n-node-react.vercel.app/",
+    description: "Una aplicación para conectar amantes de mascotas con centros de adopción.",
   },
   {
     id: 6,
     image: "/Todo.jpg",
     url: "https://todo-sooty-xi.vercel.app/new",
+    description: "Una aplicación de lista de tareas simple e intuitiva.",
   },
 ];
 

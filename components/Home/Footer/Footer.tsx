@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { Logo } from "../Logo/Logo";
 
 const Footer = () => {
   return (
     <div className="pt-16 pb-16 bg-[#111827] ">
-      <div>
-        <Image src="/images/logo.png" alt="logo" width={180} height={180} className="mx-auto" />
+      <div className="flex justify-center items-center">
+        <Logo />
       </div>
-      <div className="flex items-center flex-wrap justify-center gap-x-10 gap-y-4 text-white font-bold">
+      <div className="flex items-center flex-wrap justify-center mt-6 gap-x-10 gap-y-4 text-white font-bold">
         <div>Inicio</div>
         <div>Habilidades</div>
         <div>Proyectos</div>

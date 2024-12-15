@@ -6,17 +6,33 @@ import Image from "next/image";
 
 const Project = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#0e1e36]">
+    <div className="pt-16 pb-16 bg-[#0e1e36] ">
       <SectionHeading> Mis Proyectos</SectionHeading>
-      <div className="w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-center group">
+      <div className="w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 items-center group ">
         {projectData.map((project) => (
           <div
             key={project.id}
-            className="bg-blue-950 p-6 rounded-lg hover:scale-105 transition-transform duration-500 ease-in-out group-hover:blur-[1px] hover:!blur-none"
+            className="bg-blue-950 p-6 rounded-lg hover:scale-105 transition-transform duration-500 ease-in-out group-hover:blur-[.5px] hover:!blur-none "
           >
+            {/* Imagen */}
             <Link href={project.url} target="_blank">
-              <Image src={project.image} alt="image" width={200} height={200} className="w-full" />
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg justify-center ">
+                <Image src={project.image} alt="image" fill className="object-cover" />
+              </div>
             </Link>
+
+            {/* Descripción */}
+            <p className="mt-4 text-gray-300 text-base">{project.description}</p>
+
+            {/* Enlaces */}
+            <div className="mt-2 flex space-x-4 justify-between ">
+              <Link href={project.url} target="_blank" className="text-amber-400 hover:underline text-base ">
+                Demo
+              </Link>
+              <Link href={""} target="_blank" className="text-amber-400 hover:underline text-base">
+                Repositorio
+              </Link>
+            </div>
           </div>
         ))}
       </div>
