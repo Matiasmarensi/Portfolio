@@ -3,8 +3,10 @@ import SectionHeading from "../Helper/SectionHeading";
 import { projectData } from "@/Data/data";
 import Link from "next/link";
 import Image from "next/image";
+import { IoChevronDownOutline } from "react-icons/io5";
+import { idForAll } from "../Home";
 
-const Project = () => {
+const Project = ({ id }: idForAll) => {
   // Estado para controlar cuántos proyectos mostrar
   const [visibleProjects, setVisibleProjects] = useState(2); // Mostrar 4 inicialmente
 
@@ -14,7 +16,7 @@ const Project = () => {
   };
 
   return (
-    <div className="pt-16 pb-16 bg-[#0e1e36] ">
+    <div id={id} className="pt-28 pb-16 bg-[#0e1e36] ">
       <SectionHeading> Mis Proyectos</SectionHeading>
       <div className="w-[80%] mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 items-center group ">
         {projectData.slice(0, visibleProjects).map((project) => (
@@ -46,13 +48,14 @@ const Project = () => {
       </div>
 
       {/* Botón "Ver más" */}
-      {visibleProjects < projectData.length && ( // Mostrar solo si hay más proyectos
-        <div className="mt-8 flex justify-center">
+      {visibleProjects < projectData.length && (
+        <div className="mt-8 flex justify-center align-middle">
           <button
             onClick={showMoreProjects}
-            className="px-3 py-2 bg-[#d97706]  hover:bg-[#ffb74d] transition-all duration-150 rounded-full text-base"
+            className="px-3 py-2 bg-[#d97706] hover:bg-[#ffb74d] transition-all duration-150 rounded-full text-base flex flex-col items-center"
           >
-            Mostar más
+            Mostrar más
+            <IoChevronDownOutline className="" />
           </button>
         </div>
       )}

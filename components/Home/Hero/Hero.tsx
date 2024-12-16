@@ -2,10 +2,11 @@ import React from "react";
 import { BaseInfo } from "@/Data/data";
 import { FaDownload } from "react-icons/fa6";
 import Image from "next/image";
+import { idForAll } from "../Home";
 
-const Hero = () => {
+const Hero = ({ id }: idForAll) => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#0e1e36] overflow-hidden relative">
+    <div id={id} className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#0e1e36] overflow-hidden relative">
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* text */}

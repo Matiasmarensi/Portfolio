@@ -8,12 +8,22 @@ const Footer = () => {
         <Logo />
       </div>
       <div className="flex items-center flex-wrap justify-center mt-6 gap-x-10 gap-y-4 text-white font-bold">
-        <div>Inicio</div>
-        <div>Habilidades</div>
-        <div>Proyectos</div>
-        <div>Contacto</div>
+        <div>
+          <a href="#home">Inicio</a>
+        </div>
+        <div>
+          <a href="#about">Quién Soy</a>
+        </div>
+        <div>
+          <a href="#projects">Proyectos</a>
+        </div>
+        <div>
+          <a href="#skills">Habilidades</a>
+        </div>
+        <div>
+          <a href="#contact">Contacto</a>
+        </div>
       </div>
-      {/* año en curso con funcion */}
       <p className="text-white text-opacity-60 mt-6 text-center">
         © {new Date().getFullYear()} Todos los derechos reservados por Matias Marensi
       </p>

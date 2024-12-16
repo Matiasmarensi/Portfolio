@@ -8,6 +8,9 @@ import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
+export type idForAll = {
+  id: string;
+};
 
 const Home = () => {
   useEffect(() => {
@@ -25,11 +28,11 @@ const Home = () => {
   }, []);
   return (
     <div className="overflow-hidden bg-slate-700 ">
-      <Hero />
-      <About />
-      <Project />
-      <Skills />
-      <Contact />
+      <Hero id="home" />
+      <About id="about" />
+      <Project id="projects" />
+      <Skills id="skills" />
+      <Contact id="contact" />
     </div>
   );
 };

@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { navLinks } from "../../../constant/constant";
 import { TbMenu2 } from "react-icons/tb";
 import { Logo } from "../Logo/Logo";
+import "../../../app/globals.css"; // Asegúrate de que el archivo CSS esté importado correctamente
 
 type Props = {
   openNav: () => void;
@@ -28,10 +29,7 @@ const NavBar = ({ openNav }: Props) => {
   return (
     <div className={`fixed${navBg ? " bg-[#111827]" : ""} h-[12vh] z-[10] w-full transition-all duration-500 `}>
       <div className="flex justify-between items-center h-full w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
-        {/* Logo de texto */}
         <Logo />
-
-        {/* Navegación */}
         <div className="text-white items-center space-x-10 flex">
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (

@@ -78,22 +78,18 @@ const ContactForm = () => {
         </div>
 
         <div className="flex flex-col mt-5 md:flex-row items-center justify-center gap-4">
-          <div className="flex-1">
-            <input
-              type="email"
-              placeholder="Email"
-              id="email"
-              name="email"
-              value={formClean.email}
-              onChange={handleInputs}
-              required
-              className={`bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-opacity-15 outline-none w-full ${
-                state.errors ? "border-red-500" : "border-gray-300"
-              }`}
-            />
-
-            {state.errors && <span className="text-red-500 text-sm mt-2">Please enter a valid email address.</span>}
-          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            value={formClean.email}
+            onChange={handleInputs}
+            required
+            className={`bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-opacity-15 outline-none w-full ${
+              state.errors ? "border-red-500" : "border-gray-300"
+            }`}
+          />
 
           <input
             type="text"
@@ -103,7 +99,7 @@ const ContactForm = () => {
             value={formClean.phone}
             onChange={handleInputs}
             required
-            className="flex-1 bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-300 border-opacity-15 outline-none w-full"
+            className="bg-black text-white placeholder:text-gray-600 px-6 py-3 rounded-md border-[1.5px] border-gray-300 border-opacity-15 outline-none w-full"
           />
         </div>
 

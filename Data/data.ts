@@ -2,14 +2,15 @@ export const BaseInfo = {
   name: "Matias Santiago Marensi",
   position: "Desarrollador Web Full Stack",
   description:
-    "Desarrollador con experiencia en JavaScript, Node.js y React.js. He trabajado en proyectos individuales y grupales, enfocado en crear soluciones funcionales y eficientes. Busco seguir creciendo en entornos colaborativos y contribuir con mis habilidades técnicas.",
+    "Soy un desarrollador apasionado por la programación y la tecnología. Siempre en busca de nuevos desafíos. En esta sección, puedes probar la terminal a la derecha para obtener información sobre mis habilidades, proyectos y más, que están reflejados en mi portafolio. ¡Siéntete libre de explorar los comandos disponibles y descubrir más sobre mi trabajo!",
+
   profilePic: "/images/matias.jpg",
 };
 
 export const aboutInfo = {
   title: "Soluciones Web Funcionales y Eficientes",
   description:
-    "Soy un desarrollador especializado en la creación de aplicaciones web adaptadas a las necesidades de cada proyecto. Mi objetivo es ofrecer resultados claros y prácticos que mejoren los procesos de las empresas.",
+    "Soy un desarrollador apasionado por la programación y la tecnología. Siempre en busca de nuevos desafíos. En esta sección, puedes interactuar conmigo a través de la terminal que ves a la derecha, donde podrás obtener información sobre mis habilidades, proyectos, y más. ¡Siéntete libre de probar los comandos disponibles!",
   client: "Motivación y aprendizaje continuo",
   experience: "Formación y proyectos",
   project: "Desafíos aceptados",
