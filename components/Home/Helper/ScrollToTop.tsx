@@ -18,14 +18,10 @@ const ScrollToTop = () => {
     };
   }, []);
   const scrollToTop = () => {
-    const scrollStep = -window.scrollY / (500 / 15);
-    const scrollInterval = setInterval(() => {
-      if (window.scrollY !== 0) {
-        window.scrollBy(0, scrollStep);
-      } else {
-        clearInterval(scrollInterval);
-      }
-    }, 15);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -33,7 +29,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center focus:outline-none justify-center"
+          className="bg-amber-600 text-white rounded-full w-12 h-12 flex items-center focus:outline-none justify-center"
         >
           <FaArrowUp />
         </button>

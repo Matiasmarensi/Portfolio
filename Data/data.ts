@@ -74,36 +74,56 @@ export const projectData = [
     image: "/images/chatapp.jpg",
     url: "https://chatapp-xhvh.onrender.com/",
     description: "Una aplicación de chat en tiempo real.",
+    repository: "https://github.com/Matiasmarensi/ChatApp",
   },
   {
     id: 2,
     image: "/images/rickmorty.jpg",
     url: "https://proyecto-integrador-jet.vercel.app/favorites",
     description: "Una aplicación para explorar personajes de la serie Rick & Morty.",
+    repository: "https://github.com/Matiasmarensi/Proyecto-Integrador",
   },
   {
     id: 3,
     image: "/images/videogames.jpg",
     url: "https://video-games-git-main-matiasmarensi.vercel.app/",
     description: "Una plataforma para crear, descubrir y reseñar videojuegos.",
+    repository: "https://github.com/Matiasmarensi/VideoGames",
   },
   {
     id: 4,
     image: "/images/elfestin.jpg",
     url: "https://pf-front-end-grupo3.vercel.app/",
     description: "Plataforma de comercio electrónico para productos alimenticios.",
+    repository: "https://github.com/Matiasmarensi/PF-Server",
   },
   {
     id: 5,
     image: "/images/huellitas.jpg",
     url: "https://c16-23-n-node-react.vercel.app/",
     description: "Una aplicación para conectar amantes de mascotas con centros de adopción.",
+    repository: "https://github.com/Matiasmarensi/huellitas",
   },
   {
     id: 6,
-    image: "/Todo.jpg",
+    image: "/images/todo.jpg",
     url: "https://todo-sooty-xi.vercel.app/new",
     description: "Una aplicación de lista de tareas simple e intuitiva.",
+    repository: "https://github.com/Matiasmarensi/ToDoNextjs",
+  },
+  {
+    id: 7,
+    image: "/images/pjn.jpg",
+    url: "undefined",
+    description: "Aplicacion que utiliza WebScrapping para obtener datos, mostrarlos y exportarlos en Excel",
+    repository: "undefined",
+  },
+  {
+    id: 8,
+    image: "/images/tibia.jpg",
+    url: "https://tibia-app-rho.vercel.app/",
+    description: "Web con estilo del juego para obtener información de personajes y noticias de Tibia",
+    repository: "https://github.com/Matiasmarensi/TibiaApp",
   },
 ];
 
@@ -295,7 +315,6 @@ export const blogs = [
   },
 ];
 export const contactData = {
-  phone: "+54 11 6686-0950",
   email: "matiasmarensi@gmail.com",
   address: "Buenos Aires, Argentina",
 };

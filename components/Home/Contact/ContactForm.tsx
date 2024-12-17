@@ -45,12 +45,7 @@ const ContactForm = () => {
 
   return (
     <div className="bg-[#0c0f1c] rounded-lg p-4 sm:p-10">
-      <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">Contact Us</h1>
-      <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta esse neque rerum? Iste velit doloremque harum
-        dolor nemo culpa at, maiores necessitatibus autem commodi! Ex pariatur exercitationem provident distinctio
-        maiores.
-      </p>
+      <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">Contacto</h1>
 
       {/* Formulario */}
       <form onSubmit={handleSubmit} method="POST" className="mt-8 block w-full overflow-hidden text-base">
@@ -117,15 +112,15 @@ const ContactForm = () => {
         <div className="mt-4">
           <button
             type="submit"
-            className="px-8 py-3.5 bg-[#d97706] text-white hover:bg-[#ffb74d] transition-all duration-150 rounded-full"
+            className="px-5 py-2 bg-[#d97706] text-white hover:bg-[#ffb74d] transition-all duration-150 rounded-full"
             disabled={state.submitting}
           >
-            Send Message
+            Enviar
           </button>
         </div>
       </form>
 
-      {state.succeeded && <p className="mt-4 text-green-500">Message sent successfully!</p>}
+      {state.succeeded && <p className="mt-4 text-green-500">Mensaje enviado correctamente!</p>}
     </div>
   );
 };

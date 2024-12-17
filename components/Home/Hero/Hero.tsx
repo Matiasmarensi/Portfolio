@@ -22,10 +22,14 @@ const Hero = ({ id }: idForAll) => {
               {BaseInfo.position}
             </h1>
             <p className="text-white text-sm md:text-base text-opacity-60 mt-6">{BaseInfo.description}</p>
-            <button className="md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-al duration-300 rounded-lg mt-8 bg-gray-700 hover:to-gray-900 flex items-center space-x-2">
+            <a
+              href="/Marensi_CV.pdf"
+              download="Matias_CV.pdf"
+              className="inline-flex md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-sm md:text-lg transition-all duration-300 rounded-lg mt-8 bg-gray-700 hover:bg-gray-900 items-center space-x-2"
+            >
               <span>Descargar CV</span>
               <FaDownload />
-            </button>
+            </a>
           </div>
           {/* image */}
           <div className="mx-auto hidden lg:block rounded-[3rem] bg-gradient-to-br from-[#d97706] via-[#f59e0b] to-[#f5f5f5] p-2 shadow-2xl overflow-hidden">

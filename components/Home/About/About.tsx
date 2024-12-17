@@ -88,7 +88,7 @@ const About = ({ id }: idForAll) => {
       <SectionHeading>Quién soy</SectionHeading>
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
         <div>
-          <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
+          <h1 className="text-bg py-1 text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
             {aboutInfo.title}
           </h1>
           <p className="text-gray-400 text-sm md:text-base text-opacity-60 mt-6">{aboutInfo.description}</p>
