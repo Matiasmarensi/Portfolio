@@ -11,14 +11,9 @@ const Hero = ({ id }: idForAll) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* text */}
           <div>
-            <h1 data-aos="fade-up" className="text-2xl md:text-3xl font-bold mb-5 text-gray-200">
-              Soy {BaseInfo.name}
-            </h1>
+            <h1 className="text-2xl md:text-3xl font-bold mb-5 text-gray-200">Soy {BaseInfo.name}</h1>
 
-            <h1
-              data-aos="fade-fade-right"
-              className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] l:leading-[3.5rem] xl:leading-[4rem] text-white"
-            >
+            <h1 className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] l:leading-[3.5rem] xl:leading-[4rem] text-white">
               {BaseInfo.position}
             </h1>
             <p className="text-white text-sm md:text-base text-opacity-60 mt-6">{BaseInfo.description}</p>
@@ -32,8 +27,9 @@ const Hero = ({ id }: idForAll) => {
             </a>
           </div>
           {/* image */}
-          <div className="mx-auto hidden lg:block rounded-[3rem] bg-gradient-to-br from-[#d97706] via-[#f59e0b] to-[#f5f5f5] p-2 shadow-2xl overflow-hidden">
+          <div className="mx-auto hidden lg:block rounded-[3rem] bg-gradient-to-br from-[#d97706] via-[#f59e0b] to-[#f5f5f5] p-2 shadow-2xl overflow-hidden ">
             <Image
+              data-aos="zoom-out-right"
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               className="rounded-[2.5rem]"

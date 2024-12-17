@@ -94,7 +94,7 @@ const About = ({ id }: idForAll) => {
           <p className="text-gray-400 text-sm md:text-base text-opacity-60 mt-6">{aboutInfo.description}</p>
         </div>
 
-        <div className="bg-[#1e1e1e] p-4 rounded-lg shadow-lg terminal">
+        <div className="bg-[#1e1e1e] p-4 rounded-lg shadow-lg terminal" data-aos="zoom-out-up">
           {/* Barra superior estilo terminal */}
           <div className="flex items-center bg-[#3b3b3b] py-1 px-3 rounded-t-lg">
             <span className="w-3 h-3 bg-red-500 rounded-full mr-2"></span>

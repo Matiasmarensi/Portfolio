@@ -18,9 +18,9 @@ const Home = () => {
       await import("aos");
 
       Aos.init({
-        duration: 1000,
+        duration: 2000,
         easing: "ease",
-        once: true,
+        once: false,
         anchorPlacement: "top-bottom",
       });
     };

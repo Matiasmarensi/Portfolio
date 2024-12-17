@@ -7,7 +7,7 @@ import { SiGooglemaps } from "react-icons/si";
 
 const ContactInfo = () => {
   return (
-    <div>
+    <div data-aos="zoom-out">
       <div className="flex items-center space-x-8  mt-8 mb-8">
         <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 flex items-center justify-center flex-col">
           <MdAlternateEmail className="w-10 h-10 md:w-7 mg:h-7 text-white" />
