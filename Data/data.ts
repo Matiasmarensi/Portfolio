@@ -4,7 +4,7 @@ export const BaseInfo = {
   description:
     "Soy un desarrollador apasionado por la programación y la tecnología. Siempre en busca de nuevos desafíos. En esta sección, puedes probar la terminal a la derecha para obtener información sobre mis habilidades, proyectos y más, que están reflejados en mi portafolio. ¡Siéntete libre de explorar los comandos disponibles y descubrir más sobre mi trabajo!",
 
-  profilePic: "/images/matias.jpg",
+  profilePic: "/images/matias.JPG",
 };
 
 export const aboutInfo = {
