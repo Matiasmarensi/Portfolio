@@ -29,7 +29,6 @@ const Hero = ({ id }: idForAll) => {
           {/* image */}
           <div className="mx-auto hidden lg:block rounded-[3rem] bg-gradient-to-br from-[#d97706] via-[#f59e0b] to-[#f5f5f5] p-2 shadow-2xl overflow-hidden ">
             <Image
-              data-aos="zoom-out-right"
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               className="rounded-[2.5rem]"
