@@ -35,7 +35,7 @@ const About = ({ id }: idForAll) => {
 
         case "help":
           response =
-            "Comandos disponibles: client, experience, projects, website, clear, skills,  contact, location, hobbies, portfolio";
+            "Comandos disponibles: client, experience, projects, website, skills, contact, location, hobbies, portfolio, github, clear o cls.";
           break;
 
         case "email":

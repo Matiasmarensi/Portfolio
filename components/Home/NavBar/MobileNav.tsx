@@ -14,10 +14,10 @@ export const MobileNav = ({ closeNav, showNav }: Props) => {
   return (
     <div>
       <div
-        className={` fixed${navOpen} transform transition-all duration-500 inset-0 z-[1000] bg-black opacity-70 w-full h-screen`}
+        className={` fixed${navOpen} transform transition-all duration-500 inset-0 z-[1000] bg-slate-700 opacity-70 w-full h-screen`}
       ></div>
       <div
-        className={`fixed text-white ${navOpen} transform transition-all duration-500 delay-300 justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-gray-600 space-y-6 z-[1000] `}
+        className={`fixed text-white ${navOpen} transform transition-all duration-500 delay-300 justify-center flex flex-col h-full w-[80%] sm:w-[60%] bg-[#111827] space-y-6 z-[1000] `}
       >
         {navLinks.map((link) => (
           <Link key={link.id} href={link.url}>
