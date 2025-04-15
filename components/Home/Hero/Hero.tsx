@@ -11,11 +11,13 @@ const Hero = ({ id }: idForAll) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* text */}
           <div>
-            <h1 className="text-2xl md:text-3xl font-bold mb-5 text-gray-200">Soy {BaseInfo.name}</h1>
-
-            <h1 className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] l:leading-[3.5rem] xl:leading-[4rem] text-white">
-              {BaseInfo.position}
+            <h1
+              className="text-bg text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold md:leading-[3rem]
+            l:leading-[3.5rem] xl:leading-[4rem] text-white mb-1"
+            >
+              Soy {BaseInfo.name}
             </h1>
+            <h1 className="text-2xl md:text-3xl font-bold mb-5 text-gray-200">{BaseInfo.position}</h1>
             <p className="text-white text-sm md:text-base text-opacity-60 mt-6">{BaseInfo.description}</p>
             <a
               href="/Marensi_CV.pdf"
